@@ -1,17 +1,133 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --background: #E6E6E6;
-    --font-large: 64px;
-    --font-medium: 24px;
-    --font-regular: 14px;
-
+:root {
+  --background: #e6e6e6;
+  --font-large: 64px;
+  --font-medium: 24px;
+  --font-regular: 14px;
 }
 
-html{
-    background-color: var(--background);
+html {
+  background-color: var(--background);
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: var(--font-regular);
+  font-weight: 600;
+  color: #555555;
+}
+.mp_nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  right: 0;
+  height: 60px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.mp_nav_101 {
+  width: 200px;
+  height: 100%;
+}
+.mp_nav_101 img {
+  width: auto;
+  height: 100%;
+}
+.mp_nav_1 {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mp_logo {
+  font-family: "Clash Display", sans-serif;
+  color: white;
+  font-size: var(--font-regular);
+  font-weight: 500;
+}
+
+.mp_nav_2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: flex-start;
+  width: 50%;
+  font-family: "Manrope", sans-serif;
+}
+
+.mp_nav_2 span {
+  margin-left: 5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.mp_nav_2 span:hover {
+  text-decoration: underline;
+}
+
+.mp_intro {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mp_intro_1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.mp_intro_101 h1 {
+  font-family: "Clash Display", sans-serif;
+  font-size: var(--font-large);
+  margin-bottom: 30px;
+  color: black;
+  font-weight: 600;
+}
+.mp_intro_102{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.mp_intro_102 img{
+    width: 160px;
+    height: auto;
+    margin-right:10px;
+}
+.mp_intro_2 {
+  height: 100%;
+  position: relative;
+  width: 40%;
+}
+.mp_intro_2 img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -45%;
+  right: 0;
+  transform: rotate(-20deg);
+}
+
+.mp_sec{
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
 }
