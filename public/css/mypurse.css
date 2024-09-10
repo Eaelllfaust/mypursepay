@@ -153,7 +153,7 @@ body {
     position: absolute;
     top: -50%;
     left:20%;
-    transform: rotate(-15deg);
+    transform: rotate(0deg);
 }
 
 .mp_intro_2 img {
