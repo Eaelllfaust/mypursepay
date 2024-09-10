@@ -71,7 +71,7 @@ body {
   cursor: pointer;
 }
 .mp_nav_2 span:hover {
-  text-decoration: underline;
+  color: #e6e6e6;
 }
 
 .mp_intro {
@@ -159,4 +159,26 @@ body {
 .x09 h1 img {
   min-width: 100px;
   height: 100px !important;
+}
+
+.line {
+  width: 100%;
+  height: 25px;
+  background-color: black;
+}
+.mp_third {
+  height: 50vh;
+  display: flex;
+  width: 100%;
+}
+.mp_third_1 {
+  height: 100%;
+  width: 40%;
+  background-color: #edf200;
+}
+
+.mp_third_2 {
+  width: 60%;
+  height: 100%;
+  background-color: #98f500;
 }
