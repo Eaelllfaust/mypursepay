@@ -13,10 +13,10 @@
 
 html {
   background-color: var(--background);
+  font-size: 12px !important;
 }
 body {
   font-family: "Manrope", sans-serif;
-  font-size: var(--font-regular);
   font-weight: 600;
   color: #555555;
 }
@@ -96,8 +96,8 @@ body {
   overflow: hidden;
 }
 
-.mp_fourth{
-    height: 70vh;
+.mp_fourth {
+  height: 100vh;
 }
 
 .mp_intro_1 {
@@ -147,13 +147,13 @@ body {
   transform: rotate(15deg);
 }
 
-.x10 img{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: -50%;
-    left:20%;
-    transform: rotate(0deg);
+.x10 img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: rotate(0deg);
 }
 
 .mp_intro_2 img {
@@ -194,9 +194,9 @@ body {
   color: black !important;
 }
 .mp_third_1 h1 {
-    font-size:200px;
-    font-family: "Clash Display", sans-serif;
-    font-weight: 400;
+  font-size: 200px;
+  font-family: "Clash Display", sans-serif;
+  font-weight: 400;
 }
 
 .mp_third_2 {
@@ -209,13 +209,91 @@ body {
   color: black !important;
 }
 .mp_third_2 h1 {
-    font-size: var(--font-large);
-    font-family: "Clash Display", sans-serif;
-    font-weight: 600;
+  font-size: var(--font-large);
+  font-family: "Clash Display", sans-serif;
+  font-weight: 600;
 }
 
-.mp_fifth{
+.mp_fifth {
+  width: 100%;
+  height: fit-content;
+  padding: 2.5%;
+  background-image: url("../resource/purseboom.svg") !important;
+}
+
+.mp_fifth_1 {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+}
+
+.mp_fifth_101{
+    padding:5%;
+}
+.big_text {
+  color: black;
+  font-family: "Clash Display", sans-serif;
+  font-size: var(--font-large);
+  font-weight: 600;
+}
+.big_text_lean{
+    color:black;
+    font-family: "Clash Display", sans-serif;
+    font-size: var(--font-large);
+    font-weight: 500;
+}
+.mp_fifth_2{
+    width:100%;
+    height:max-content;
+    margin-bottom: 5rem;
+  
+}
+.purseafro{
+    width:100%;
+    height: auto;
+}
+.purse_split{
+    display: flex;
+    height: 100%;
+    padding:5%;
     width: 100%;
-    height: 200vh;
-    background-image: url("../resource/purseboom.svg") !important;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.purse_split div{
+    width:50%;
+}
+
+.purse_split img{
+    max-width: 50%;
+    height: auto;
+}
+.pursequadflix{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    right: 0;
+    top:0;
+    /* background-color: rgba(0,0,0,0.20); */
+    bottom:0;
+    margin: auto;
+    z-index: 999;
+}
+.mp_sixth{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff;
+}
+.mp_sixth img{
+    position: absolute;
+    width:300px;
+    left:0;
+    bottom:0;
+    top:0;
+    margin: auto;
+    height: auto;
 }
