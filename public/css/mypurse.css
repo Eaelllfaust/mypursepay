@@ -227,8 +227,8 @@ body {
   height: 100%;
 }
 
-.mp_fifth_101{
-    padding:5%;
+.mp_fifth_101 {
+  padding: 5%;
 }
 .big_text {
   color: black;
@@ -236,64 +236,62 @@ body {
   font-size: var(--font-large);
   font-weight: 600;
 }
-.big_text_lean{
-    color:black;
-    font-family: "Clash Display", sans-serif;
-    font-size: var(--font-large);
-    font-weight: 500;
+.big_text_lean {
+  color: black;
+  font-family: "Clash Display", sans-serif;
+  font-size: var(--font-large);
+  font-weight: 500;
 }
-.mp_fifth_2{
-    width:100%;
-    height:max-content;
-    margin-bottom: 5rem;
-  
+.mp_fifth_2 {
+  width: 100%;
+  height: max-content;
+  margin-bottom: 5rem;
 }
-.purseafro{
-    width:100%;
-    height: auto;
+.purseafro {
+  width: 100%;
+  height: auto;
 }
-.purse_split{
-    display: flex;
-    height: 100%;
-    padding:5%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    
+.purse_split {
+  display: flex;
+  height: 100%;
+  padding: 5%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.purse_split div{
-    width:50%;
+.purse_split div {
+  width: 50%;
 }
 
-.purse_split img{
-    max-width: 50%;
-    height: auto;
+.purse_split img {
+  max-width: 50%;
+  height: auto;
 }
-.pursequadflix{
-    position: fixed;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    right: 0;
-    top:0;
-    /* background-color: rgba(0,0,0,0.20); */
-    bottom:0;
-    margin: auto;
-    z-index: 999;
+.pursequadflix {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  right: 0;
+  top: 0;
+  /* background-color: rgba(0,0,0,0.20); */
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
 }
-.mp_sixth{
-    width:100%;
-    height: 100vh;
-    position: relative;
-    background-color: #fff;
+.mp_sixth {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
 }
-.mp_sixth img{
-    position: absolute;
-    width:300px;
-    left:0;
-    bottom:0;
-    top:0;
-    margin: auto;
-    height: auto;
+.mp_sixth img {
+  position: absolute;
+  width: 300px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  height: auto;
 }
