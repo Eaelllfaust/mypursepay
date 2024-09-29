@@ -52,7 +52,6 @@ body {
 .mp_logo {
   font-family: "Clash Display", sans-serif;
   color: white;
-  font-size: var(--font-regular);
   font-weight: 500;
 }
 
@@ -435,8 +434,8 @@ footer {
   margin-top: 20rem;
   width: 50%;
 }
-.min-set{
-  min-width:500px !important;
+.min-set {
+  min-width: 500px !important;
 }
 @media screen and (max-width: 1250px) {
   html {
@@ -444,7 +443,65 @@ footer {
     font-size: 10px !important;
   }
 
-  .mp_nav_1{
-    min-width:350px !important;
+  .mp_nav_1 {
+    min-width: 400px !important;
+  }
+  :root {
+    --font-large: 48px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mp_intro_2 {
+    background-color: rgba(255, 255, 255, 0.09);
+    z-index: -1;
+    backdrop-filter: blur(20px);
+    right: -2.5% !important;
+    top: 0% !important;
+    position: absolute;
+  }
+  .mp_nav_1 {
+    min-width: 230px !important;
+    justify-content: space-between;
+  }
+  .mp_nav, .mp_bottom{
+    height: 40px;
+  }
+  .mp_nav_101{
+    width: 100px;
+  }
+  .mp_intro_2 img {
+    width: 300px;
+    height: auto !important;
+    position: absolute;
+    bottom:0% !important;
+    right: 0% !important;
+    top: -20% !important;
+    transform: rotate(20deg);
+  }
+  .mp_intro_102 img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mp_intro{
+  height:unset !important;
+}
+}
+
+@media screen and (max-width:680px){
+  .mp_intro_1 {
+    height: 100%;
+    
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  .mp_intro_2 {
+ display: none;
   }
 }
