@@ -435,10 +435,16 @@ footer {
   margin-top: 20rem;
   width: 50%;
 }
-
+.min-set{
+  min-width:500px !important;
+}
 @media screen and (max-width: 1250px) {
   html {
     background-color: var(--background);
-    font-size: 8px !important;
+    font-size: 10px !important;
+  }
+
+  .mp_nav_1{
+    min-width:350px !important;
   }
 }
