@@ -36,11 +36,15 @@
           My Purse Pay
         </h3>
       </div>
-      <div class="mp_nav_2">
-        <span class="btn">App store</span>
-      </div>
+      <div class="mp_nav_2" id="storeButtons">
+        <a id="appleStoreButton" class="btn">App Store</a>
+        <a id="googlePlayButton" class="btn" style="display: none;">Play Store</a>
+    </div>
     </nav>
     <main>
+      <div class="faustspromise">
+        My purse is coming to your app stores soon.
+      </div>
       <section class="mp_intro">
         <dotlottie-player
         src="https://lottie.host/fe020e23-f6a4-42fc-b100-134da2eca76c/KkEFDIIGkg.json"
@@ -65,9 +69,9 @@
           <div class="mp_intro_102">
             <img
               src="public/resource/GetItOnGooglePlay_Badge_Web_color_English 1.png"
-              alt=""
+              alt="getongoogleplay"
             />
-            <img src="public/resource/US_UK_Download_on_the.png" alt="" />
+            <img src="public/resource/US_UK_Download_on_the.png" alt="getonappstore" />
           </div>
           <br /><br />
           <small>Registered and certified by EFCC. (Company No. 7805208)</small>
@@ -382,5 +386,19 @@
         pqf.style.display = "none";
       }, 2500);
     });
+    document.addEventListener('DOMContentLoaded', function() {
+            var appleStoreButton = document.getElementById('appleStoreButton');
+            var googlePlayButton = document.getElementById('googlePlayButton');
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                appleStoreButton.style.display = 'none';
+                googlePlayButton.style.display = 'inline-block';
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {   
+            } else {
+                googlePlayButton.style.display = 'inline-block';
+                appleStoreButton.textContent = 'iOS App Store';
+                googlePlayButton.textContent = 'Google Play Store';
+            }
+        });
   </script>
 </html>

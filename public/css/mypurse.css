@@ -245,11 +245,13 @@ body {
 .mp_fifth_2 {
   width: 100%;
   height: max-content;
-  margin-bottom: 5rem;
+  margin-bottom: -0.1rem;
+  box-shadow: 0px -4px 25px 4px rgba(188, 188, 188, 0.25);
 }
 .purseafro {
   width: 100%;
   height: auto;
+  display: none;
 }
 .purse_split {
   display: flex;
@@ -297,9 +299,6 @@ body {
 .mp_sixth_1 > h1 {
   text-align: center;
 }
-.boom_line{
-  display: none;
-}
 .mp_sixth img:nth-child(1) {
   position: absolute;
   width: 300px;
@@ -310,7 +309,7 @@ body {
   height: auto;
 }
 .mp_sixth img:nth-child(2) {
-display: none;
+  display: none;
 }
 
 .mp_sixth_2 {
@@ -581,7 +580,7 @@ footer {
 
   .purse_split img {
     max-width: 50%;
-    margin-top:2rem;
+    margin-top: 2rem;
     height: auto;
   }
   .mp_sixth_1 {
@@ -647,14 +646,14 @@ footer {
   .purseafro {
     display: none;
   }
-  .purseafro_exm{
-   display: block;
-  }
-  .boom_line{
+  .purseafro_exm {
     display: block;
   }
-  .s45{
-    margin-bottom:3rem;
+  .boom_line {
+    display: block;
+  }
+  .s45 {
+    margin-bottom: 3rem;
   }
   .mp_fifth_2 {
     width: 100%;
@@ -668,7 +667,7 @@ footer {
   }
   .pursefeed_2 img {
     width: 100%;
-    padding-bottom:0px !important;
+    padding-bottom: 0px !important;
     padding-top: 0px !important;
   }
   .pursefeed {
@@ -677,9 +676,9 @@ footer {
   .pursefeed_1 h3 {
     display: none;
   }
-  footer{
-    padding:1.5% !important;
-    padding-top:2% !important;
+  footer {
+    padding: 1.5% !important;
+    padding-top: 2% !important;
   }
 }
 
@@ -721,8 +720,11 @@ footer {
   .x32 {
     margin-top: 3rem;
   }
-  .pursefeed{
-    padding-bottom:2rem !important;
+  .pursefeed {
+    padding-bottom: 2rem !important;
+  }
+  .mp_nav_2 {
+    width: auto;
   }
 }
 
@@ -750,12 +752,44 @@ footer {
     --font-regular: 11px;
   }
 }
-.btn{
-  background-color: rgba(255, 255, 255, 0.30);
+.btn {
+  background-color: rgba(255, 255, 255, 0.3);
   width: max-content;
   padding: 5px;
   padding-left: 10px;
+  cursor: pointer;
+  margin-left: 10px;
   border-radius: 30px;
   padding-right: 10px;
-  
+}
+a {
+  color: unset;
+}
+
+.faustspromise {
+  width: 300px;
+  position: fixed;
+  top: 10%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #98f500;
+  animation: drop 0.5s ease-in-out;
+  box-shadow: 1px 2px 17.6px 3px rgba(39, 39, 39, 0.25);
+}
+
+@keyframes drop {
+  0%{
+    top: 0;
+  }
+  100%{
+    top:10%;
+  }
 }
