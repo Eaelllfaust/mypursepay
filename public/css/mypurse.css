@@ -544,6 +544,34 @@ footer {
     display: none !important;
   }
 }
+.faustspromise {
+  width: 300px;
+  position: fixed;
+  top: 10%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ffffff;
+  display: none;
+  animation: drop 0.5s ease-in-out;
+  box-shadow: 1px 2px 17.6px 3px rgba(193, 193, 193, 0.25);
+}
+
+@keyframes drop {
+  0%{
+    top: 0;
+  }
+  100%{
+    top:10%;
+  }
+}
 @media screen and (max-width: 680px) {
   .mp_intro_1 {
     width: 100%;
@@ -680,6 +708,17 @@ footer {
     padding: 1.5% !important;
     padding-top: 2% !important;
   }
+  .faustspromise {
+    top:6%;
+  }
+  @keyframes drop {
+    0%{
+      top: 0;
+    }
+    100%{
+      top:6%;
+    }
+  }
 }
 
 .pursefeed_1 {
@@ -766,30 +805,3 @@ a {
   color: unset;
 }
 
-.faustspromise {
-  width: 300px;
-  position: fixed;
-  top: 10%;
-  margin: auto;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9;
-  height: 60px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background: #98f500;
-  animation: drop 0.5s ease-in-out;
-  box-shadow: 1px 2px 17.6px 3px rgba(39, 39, 39, 0.25);
-}
-
-@keyframes drop {
-  0%{
-    top: 0;
-  }
-  100%{
-    top:10%;
-  }
-}
