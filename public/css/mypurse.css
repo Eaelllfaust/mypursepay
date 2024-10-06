@@ -259,15 +259,16 @@ body {
   padding: 5%;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .purse_split div {
   width: 50%;
+  padding:5rem;
 }
 
 .purse_split img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
 }
 .pursequadflix {
@@ -604,6 +605,7 @@ footer {
 
   .purse_split div {
     width: 100%;
+    padding:0rem;
   }
 
   .purse_split img {
